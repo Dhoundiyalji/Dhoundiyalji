@@ -1,0 +1,29 @@
+class GFG {
+	public static void main (String[] args) 
+	{
+	    Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();         //Input test cases
+		for(int k=1;k<=t;k++)           // Loop for cases
+	 {
+		
+		int s=sc.nextInt();         //Size of array
+		int []a=new int[s];         // Declarig the array
+		for(int i=0;i<s;i++)            // Loop for taking Input
+		{
+		    a[i]=sc.nextInt();      //Input values of Array
+		}
+			int []b=new int[s];     // Declairing new array of same size
+		for(int i=0;i<s;i++)
+		{
+		    b[i]=a[s-1-i];                  // Putting values i Reverse order..
+		}
+		
+		for(int i=0;i<s;i++)            // Printing the Reverse Array...
+		{
+		   System.out.print(b[i]+" ");
+		}
+	    
+	    System.out.println();
+	 }	
+	}
+}
